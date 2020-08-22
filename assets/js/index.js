@@ -1,7 +1,7 @@
 //入口函数
 $(function(){
     //获取用户信息
-    geUserInof();
+    getUserInof();
 
     //退出
     $("#btnLogout").on('click',function(){
@@ -15,8 +15,8 @@ $(function(){
             layer.close(index);
           });
     })
-
-function geUserInof(){
+});
+function getUserInof(){
     //发送ajax
     $.ajax({
         url:'/my/userinfo',
@@ -60,4 +60,3 @@ function  renderAvatar(user){
 }
 
 
-});
